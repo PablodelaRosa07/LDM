@@ -1,3 +1,28 @@
-h1{ 
- color:green;
+/*
+*Este es el CSS del index.html
+*
+*/
+*{
+color:blue;
 }
+h1{ 
+ color:white;
+ background-color:black;
+}
+
+p a {
+color:green;
+}
+
+p p {
+color:red;
+}
+
+h1, h3{
+ color:red;
+ background-color:yellow;
+}
+
+
+
+
