@@ -1,0 +1,53 @@
+body {
+  background: white;
+  color: green;
+}
+
+header {
+  background: green;
+  color: white;
+
+}
+
+section {
+  background: white;
+  border: black;
+}
+
+h2 {
+  color: green;
+}
+
+table {
+  width: 100%;
+}
+
+}
+
+th {
+  background: black;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background: black;
+  color: white;
+
+}
+
+button:hover {
+  background: green;
+}
+
+footer {
+
+  color: white;
+}
