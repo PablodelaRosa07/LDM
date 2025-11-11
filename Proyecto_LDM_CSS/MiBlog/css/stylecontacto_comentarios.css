@@ -1,0 +1,58 @@
+body {
+  
+  background-image: url(https://prod-media.beinsports.com/image/1752419836416_ae1148fe-439a-4940-a070-d3d3daf10bbe.png?ver=03-06-2025);
+  opacity: 0.5; ;
+}
+
+header {
+  background: white;
+  color: black;
+
+}
+
+section {
+
+  background: white;
+  border: black;
+}
+
+h2 {
+  background: white;
+  color: black;
+}
+
+table {
+  width: 100%;
+}
+
+
+
+th {
+  background: white;
+  color: black
+}
+p {
+
+
+}
+a {
+  background: white;
+  color: black;
+  text-decoration: none;
+}
+
+
+button {
+  background: white;
+  color: black;
+
+}
+
+button:hover {
+  background: green;
+}
+
+footer {
+
+  color: white;
+}

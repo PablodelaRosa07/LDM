@@ -1,0 +1,53 @@
+body {
+  
+  background-image: url(https://thumb2.besoccerapps.com/rbetis/img_news/41/41579.jpg); 
+  color: white;
+}
+
+table {
+    max-width: 800px;
+}
+
+pre{
+  font-family: 'Times New Roman', Times, serif;
+}
+h1 {
+  color: rgb(1, 255, 1);
+
+}
+
+h2 {
+  color: rgb(2, 255, 2);
+}
+
+h3 {
+  color: rgb(0, 255, 0);
+}
+
+table {
+  width: 100%;
+}
+
+
+
+th {
+  color: white;
+}
+
+a {
+  color: rgb(0, 255, 0);
+  text-decoration: none;
+}
+
+
+button {
+  color: white;
+
+}
+
+
+footer {
+  float: left;
+  color: white;
+}
+
