@@ -1,6 +1,6 @@
 body {
   
-  background-image: url(https://www.soccerbible.com/media/135201/betis-1-min.jpg); 
+  background-image: url(https://thumb2.besoccerapps.com/rbetis/img_news/41/41579.jpg); 
   color: white;
 }
 
@@ -41,8 +41,13 @@ a {
 
 
 button {
-  color: rgb(0, 0, 0);
+  color: white;
 
 }
 
+
+footer {
+  float: left;
+  color: white;
+}
 

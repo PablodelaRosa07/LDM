@@ -1,16 +1,10 @@
 body {
   
-  background-image: url(https://www.soccerbible.com/media/135201/betis-1-min.jpg); 
+  background-image: url(https://prod-media.beinsports.com/image/1752419836416_ae1148fe-439a-4940-a070-d3d3daf10bbe.png?ver=03-06-2025);
   color: white;
 }
 
-table {
-    max-width: 800px;
-}
 
-pre{
-  font-family: 'Times New Roman', Times, serif;
-}
 h1 {
   color: rgb(1, 255, 1);
 
@@ -41,8 +35,12 @@ a {
 
 
 button {
-  color: rgb(0, 0, 0);
+  color: white;
 
 }
 
 
+footer {
+  float: left;
+  color: white;
+}
