@@ -1,46 +1,133 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo general y tipografía */
 body {
-  
-  background-image: url(https://prod-media.beinsports.com/image/1752419836416_ae1148fe-439a-4940-a070-d3d3daf10bbe.png?ver=03-06-2025);
-  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('https://prod-media.beinsports.com/image/1752419836416_ae1148fe-439a-4940-a070-d3d3daf10bbe.png?ver=03-06-2025');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #f0f0f0;
+  line-height: 1.8;
+  padding: 0 5%;
 }
 
-
-h1 {
-  color: rgb(1, 255, 1);
-
+/* Encabezado */
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 2px solid #00ff00;
 }
 
-h2 {
-  color: rgb(2, 255, 2);
+header h1 {
+  font-size: 3em;
+  color: #00ff00;
+  text-shadow: 2px 2px 5px black;
 }
 
-h3 {
-  color: rgb(0, 255, 0);
+header h2 {
+  font-size: 1.5em;
+  color: #66ff66;
+  margin-top: 10px;
 }
 
+/* Sección principal */
+main {
+  padding: 30px 0;
+}
+
+/* Artículo destacado */
+article {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-left: 5px solid #00cc66;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+article h3 {
+  color: #00ff99;
+  margin-bottom: 10px;
+}
+
+article ul {
+  list-style: square inside;
+  padding-left: 10px;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+nav li a {
+  display: inline-block;
+  background-color: rgba(0, 255, 0, 0.1);
+  color: #00ff00;
+  padding: 10px 15px;
+  border-left: 4px solid #00ff00;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav li a:hover {
+  background-color: #00ff00;
+  color: #000;
+}
+
+/* Tablas */
 table {
   width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
-
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
 
 th {
-  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
 }
 
-a {
-  color: rgb(0, 255, 0);
-  text-decoration: none;
-}
-
-
+/* Botones */
 button {
+  background-color: #00cc66;
   color: white;
-
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+button:hover {
+  background-color: #00e68a;
+}
 
+/* Pie de página */
 footer {
-  float: left;
-  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9em;
+  border-top: 1px solid #00ff00;
 }

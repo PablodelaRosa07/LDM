@@ -1,53 +1,75 @@
 body {
-  
-  background-image: url(https://wallpapers.com/images/hd/1920x1080-hd-sports-fksnbe74tfn1q09p.jpg); 
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('https://wallpapers.com/images/hd/1920x1080-hd-sports-fksnbe74tfn1q09p.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: white;
+  padding: 0 5%;
+  line-height: 1.8;
 }
 
-table {
-    max-width: 800px;
+h1, h2, h3 {
+  text-shadow: 1px 1px 3px black;
 }
 
-pre{
-  font-family: 'Times New Roman', Times, serif;
-}
 h1 {
-  color: rgb(1, 255, 1);
-
+  color: #00ff00;
+  font-size: 2.5em;
+  margin-top: 20px;
 }
 
 h2 {
-  color: rgb(2, 255, 2);
+  color: #00e600;
+  font-size: 1.8em;
 }
 
 h3 {
-  color: rgb(0, 255, 0);
+  color: #00cc00;
+  font-size: 1.4em;
 }
 
-table {
-  width: 100%;
+ul, ol {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 20px;
 }
 
-
-
-th {
-  color: white;
+li {
+  margin-bottom: 10px;
 }
 
 a {
-  color: rgb(0, 255, 0);
+  color: #00ff00;
   text-decoration: none;
+  font-weight: bold;
 }
 
+a:hover {
+  text-decoration: underline;
+  color: #66ff66;
+}
 
 button {
+  background-color: #00aa00;
   color: white;
-
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
+button:hover {
+  background-color: #00cc00;
+}
 
 footer {
-  float: left;
+  margin-top: 40px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9em;
   color: white;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-

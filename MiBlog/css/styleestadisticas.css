@@ -1,53 +1,78 @@
 body {
-  
-  background-image: url(https://thumb2.besoccerapps.com/rbetis/img_news/41/41579.jpg); 
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('https://thumb2.besoccerapps.com/rbetis/img_news/41/41579.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: white;
+  padding: 0 5%;
+  line-height: 1.8;
 }
 
-table {
-    max-width: 800px;
+h1, h2 {
+  text-shadow: 1px 1px 3px black;
 }
 
-pre{
-  font-family: 'Times New Roman', Times, serif;
-}
 h1 {
-  color: rgb(1, 255, 1);
-
+  color: #00ff00;
+  font-size: 2.5em;
+  margin-top: 20px;
 }
 
 h2 {
-  color: rgb(2, 255, 2);
-}
-
-h3 {
-  color: rgb(0, 255, 0);
+  color: #00e600;
+  font-size: 1.8em;
 }
 
 table {
   width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.695); 
 }
 
-
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
 
 th {
+  background-color: rgba(0, 0, 0, 0.695); 
   color: white;
 }
 
 a {
-  color: rgb(0, 255, 0);
+  color: #00ff00;
   text-decoration: none;
+  font-weight: bold;
 }
 
+a:hover {
+  text-decoration: underline;
+  color: #66ff66;
+}
 
 button {
+  background-color: #00aa00;
   color: white;
-
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
+button:hover {
+  background-color: #00cc00;
+}
 
 footer {
-  float: left;
+  margin-top: 40px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9em;
   color: white;
+  background-color: rgba(0, 0, 0, 0.695); 
 }
-
