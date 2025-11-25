@@ -104,7 +104,6 @@ article li {
 }
 
 article li::before {
-  content: "⚽";
   position: absolute;
   left: 0;
   color: var(--verde);
