@@ -1,11 +1,9 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Fondo general y tipografía */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-image: url('https://prod-media.beinsports.com/image/1752419836416_ae1148fe-439a-4940-a070-d3d3daf10bbe.png?ver=03-06-2025');
@@ -17,7 +15,6 @@ body {
   padding: 0 5%;
 }
 
-/* Encabezado */
 header {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 40px 20px;
@@ -37,12 +34,10 @@ header h2 {
   margin-top: 10px;
 }
 
-/* Sección principal */
 main {
   padding: 30px 0;
 }
 
-/* Artículo destacado */
 article {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
@@ -61,7 +56,6 @@ article ul {
   padding-left: 10px;
 }
 
-/* Navegación */
 nav ul {
   list-style: none;
   display: flex;
@@ -86,7 +80,6 @@ nav li a:hover {
   color: #000;
 }
 
-/* Tablas */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -105,7 +98,6 @@ th {
   color: #ffffff;
 }
 
-/* Botones */
 button {
   background-color: #00cc66;
   color: white;
@@ -121,7 +113,6 @@ button:hover {
   background-color: #00e68a;
 }
 
-/* Pie de página */
 footer {
   background-color: rgba(0, 0, 0, 0.8);
   color: #ccc;

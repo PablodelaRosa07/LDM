@@ -33,7 +33,7 @@ h3 {
 
 pre {
   font-family: 'Times New Roman', Times, serif;
-  background-color: rgba(0, 0, 0, 0.4); /* más transparente */
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 12px;
   border-radius: 6px;
   margin-top: 15px;
@@ -44,7 +44,7 @@ table {
   max-width: 800px;
   border-collapse: collapse;
   margin-top: 20px;
-  background-color: rgba(0, 0, 0, 0.4); /* más transparente */
+  background-color: rgba(0, 0, 0, 0.4); 
 }
 
 th, td {
@@ -54,7 +54,7 @@ th, td {
 }
 
 th {
-  background-color: rgba(0, 0, 0, 0.6); /* más transparente */
+  background-color: rgba(0, 0, 0, 0.6); 
   color: white;
 }
 
@@ -89,5 +89,5 @@ footer {
   text-align: center;
   font-size: 0.9em;
   color: white;
-  background-color: rgba(0, 0, 0, 0.4); /* más transparente */
+  background-color: rgba(0, 0, 0, 0.4);
 }

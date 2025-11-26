@@ -1,53 +1,39 @@
 body {
-  background-color: #f5f5f5;
-  font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
 }
 
 .card {
-  width: 350px;
-  margin: 50px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-
-
-  background-image: url(https://static.grupojoly.com/clip/36a6b7d1-f80d-477c-a111-2499ab68afae_source-aspect-ratio_1600w_0.jpg);
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  position: relative;
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.card::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.4);
-  border-radius: 10px;
-  z-index: 0;
-}
-
-.card h1,
-.card h3,
-.card p {
-  position: relative;
-  z-index: 1;
+.card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
 }
 
 .card h1 {
-  margin: 15px 0 10px;
-  font-size: 24px;
+    margin: 10px 0;
+    font-size: 24px;
 }
 
 .card h3 {
-  margin: 5px 0 15px;
-  font-weight: 400;
+    margin: 5px 0;
+    font-size: 18px;
+    color: #666;
 }
 
 .card p {
-  font-size: 14px;
-  line-height: 1.5;
+    font-size: 14px;
+    color: #333;
 }
