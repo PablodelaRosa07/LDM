@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.header nav a:hover, .header nav a.active {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+.post-card, .full-article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.post-card h3 a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.post-card .date {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+.layout-home {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+
+.layout-sidebar {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    gap: 20px; 
+}
+
+.main-content {
+    flex: 3; 
+    min-width: 0; 
+}
+
+.sidebar {
+    flex: 1; 
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    align-self: flex-start; 
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li a {
+    color: #333;
+}
+
+
+@media (max-width: 768px) {
+    .layout-sidebar {
+        flex-direction: column; 
+    }
+
+    .main-content, .sidebar {
+        flex: auto; 
+    }
+}
+
+
+.layout-full {
+    max-width: 800px; 
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+
+.layout-full .full-article p {
+    font-size: 1.1em;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial: Automatización con Kubernetes</title>
+    <link rel="stylesheet" href="../css/css.css">
+</head>
+<body>
+    <header class="header">
+        <h1>DevOps Insights</h1>
+        <p>Tu dosis diaria de código y automatización.</p>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="tutorial.html" class="active">Documentación</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="layout-docs">
+        <main class="docs-content">
+            <article>
+                <h2 id="intro">1. Introducción al CI/CD</h2>
+                <p>La Integración Continua (CI) y la Entrega Continua (CD) son prácticas fundamentales...</p>
+                
+                <h2 id="k8s">2. Configuración de Kubernetes</h2>
+                <p>Necesitas un clúster operativo. Usaremos **minikube** para este tutorial.</p>
+                <pre class="code-block"><code>kubectl apply -f deployment.yaml</code></pre>
+                
+                <h2 id="pipeline">3. Creación del Pipeline</h2>
+                <p>Usaremos Jenkins/GitHub Actions para orquestar la compilación y el despliegue.</p>
+                
+                <h2 id="conclusion">4. Conclusión</h2>
+                <p>La automatización reduce errores y acelera el proceso de entrega de software.</p>
+            </article>
+        </main>
+        
+        <aside class="docs-index utility-card sticky-sidebar">
+            <h3>Índice del Tutorial</h3>
+            <ul>
+                <li><a href="#intro">1. Introducción</a></li>
+                <li><a href="#k8s">2. Configuración K8s</a></li>
+                <li><a href="#pipeline">3. El Pipeline</a></li>
+                <li><a href="#conclusion">4. Conclusión</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 DevOps Insights.</p>
+    </footer>
+</body>
+</html>
