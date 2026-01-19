@@ -1,14 +1,32 @@
-//alert ("Hello World")
-var table = "Normal Table";
-let chair = "One Chair";
-console.log(table)
-console.log(chair)
+function myFirstFunction(nombre, apellidos){
+    console.log("Tu nombre es: " + nombre+" y tu apellido es: "+apellidos);
+}
 
-let name = 'Pablo';
-let surname = 'de la Rosa';
-let age = 23;
-let question = `How are you ${name} ${surname}?`;
-let answer = `He is ${age} years old`;
-console.log(question);
-console.log(answer);
+function myFirstFunction_ok(){
+    console.log("Thank you for you click.");
+}
+function myFirstFunction_mouseover(){
+    console.log("Thank you for you interest.");
+}
+
+
+$("#btn").addEventListener("click",function(){
+
+    var input = document.createElement("input");
+    input.setAttribute("type","email");
+    input.setAttribute("placeholder","Pon tu email");
+    input.setAttribute("name","tuemail");
+
+    $("#tablero").appendChild(input);
+    console.log("Thank you for you click (from JS).");
+
+    var correo = $("#email").value;
+});
+
+
+function $(elemento){
+    return document.querySelector(elemento);
+}
+
+
 
