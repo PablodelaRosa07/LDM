@@ -1,6 +1,6 @@
-const inputs = document.querySelectorAll('#registroForm input, #registroForm select');
+const input = document.querySelectorAll('#registroForm input, #registroForm select');
 
-inputs.forEach(input => {
+input.forEach(input => {
   input.addEventListener('blur', () => {
     validarCampo(input);
   });
