@@ -3,16 +3,26 @@ console.log("Sistema de validación activo");
 const formulario = document.getElementById('registroForm');
 const botonEnviar = document.getElementById('enviar');
 
-// Llevar el seguimiento de qué campos son válidos
+// El botón empieza desactivado al cargar la página
+botonEnviar.setAttribute('disabled', 'true');
+botonEnviar.style.backgroundColor = '#ccc';
+
 const camposValidos = {
     fname: false, dni: false, email: false, edad: false,
     fecha: false, pass: false, tel: false, cars: false,
     cp: false, terms: false
 };
 
-// Cambios en todo el formulario
 formulario.addEventListener('input', (e) => {
     validarCampo(e.target.id, e.target.value);
+});
+
+formulario.addEventListener('submit', (e) => {
+    e.preventDefault(); 
+
+    // Aquí es donde procesa los datos
+    console.log("Formulario validado y envío detenido. Datos listos:", new FormData(formulario));
+    alert("El formulario ha sido enviado.");
 });
 
 function validarCampo(id, valor) {
@@ -59,24 +69,24 @@ function actualizarEstado(id, esValido) {
     const errorSpan = document.getElementById(`error-${id}`);
     camposValidos[id] = esValido;
 
-    if (esValido) {
-        errorSpan.style.display = 'none';
-        document.getElementById(id).style.borderColor = 'green';
-    } else {
-        errorSpan.style.display = 'block';
-        document.getElementById(id).style.borderColor = 'red';
+    if (errorSpan) {
+        errorSpan.style.display = esValido ? 'none' : 'block';
+    }
+    
+    const input = document.getElementById(id);
+    if (input) {
+        input.style.borderColor = esValido ? 'green' : 'red';
     }
 
     verificarFormulario();
 }
 
 function verificarFormulario() {
-    // Uso de Every para comprobar si todos los valores del objeto son true
     const todoCorrecto = Object.values(camposValidos).every(valor => valor === true);
     
     if (todoCorrecto) {
         botonEnviar.removeAttribute('disabled');
-        botonEnviar.style.backgroundColor = '#4CAF50'; // Feedback visual de habilitado
+        botonEnviar.style.backgroundColor = '#4CAF50';
     } else {
         botonEnviar.setAttribute('disabled', 'true');
         botonEnviar.style.backgroundColor = '#ccc';
