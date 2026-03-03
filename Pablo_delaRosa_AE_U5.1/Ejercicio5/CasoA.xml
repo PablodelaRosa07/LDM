@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agencia SYSTEM "Alquiler.dtd">
+<agencia>
+    <marcas>
+        <marca nombre="Toyota" origen="Japón">
+            <modelo id_mod="TOYO" nombre="Toyo Hybrid" anyo="2023"/>
+            <modelo id_mod="RAV_4" nombre="RAV4" anyo="2024"/>
+        </marca>
+    </marcas>
+    <oficinas>
+        <oficina id="OF_BAR_02" ciudad="Barcelona">
+            <vehiculo matricula="MAT1122HHH" modelo_ref="TOYO"/>
+            <vehiculo matricula="MAT3344JJJ" modelo_ref="RAV_4"/>
+        </oficina>
+    </oficinas>
+    <empleados>
+        <empleado id="E_COMER_45" nombre="Roberto Cano">
+            <curso nombre="Mantenimiento Híbridos" fecha="2024-05-12"/>
+            <curso nombre="Sistemas de Navegación" fecha="2024-08-30"/>
+        </empleado>
+    </empleados>
+    <clientes>
+        <cliente dni="DNI99001122K" nombre="Javier López">
+            <alquiler matricula_ref="MAT1122HHH" oficina_ref="OF_BAR_02" empleado_ref="E_COMER_45" fecha_inicio="2026-01-10"/>
+        </cliente>
+    </clientes>
+</agencia>

@@ -1,0 +1,29 @@
+<!ELEMENT empresa (sedes, proyectos)>
+<!ELEMENT sedes (sede+)>
+<!ELEMENT sede (departamento+)>
+<!ATTLIST sede nombre CDATA #REQUIRED>
+
+<!ELEMENT departamento (programadores)>
+<!ATTLIST departamento nombre (movil|videojuegos|ERP) #REQUIRED>
+
+<!ELEMENT programadores (senior+)>
+<!ELEMENT senior (junior*)>
+<!ATTLIST senior 
+          id ID #REQUIRED
+          nombre CDATA #REQUIRED>
+<!ELEMENT junior EMPTY>
+<!ATTLIST junior 
+          id ID #REQUIRED
+          nombre CDATA #REQUIRED>
+
+<!ELEMENT proyectos (proyecto+)>
+<!ELEMENT proyecto (equipo, subproyecto*)>
+<!ATTLIST proyecto 
+          id_pro ID #REQUIRED
+          nombre CDATA #REQUIRED>
+<!ELEMENT equipo (miembro+)>
+<!ELEMENT miembro EMPTY>
+<!ATTLIST miembro ref_prog IDREF #REQUIRED>
+
+<!ELEMENT subproyecto EMPTY>
+<!ATTLIST subproyecto nombre CDATA #REQUIRED>

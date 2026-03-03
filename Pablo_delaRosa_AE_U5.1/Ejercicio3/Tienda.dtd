@@ -1,0 +1,39 @@
+<!ELEMENT gestion_tiendas (marcas, proveedores, tiendas)>
+<!ELEMENT marcas (marca+)>
+<!ELEMENT marca (modelo+)>
+<!ATTLIST marca 
+          nombre CDATA #REQUIRED
+          fabricante CDATA #REQUIRED
+          localizacion CDATA #REQUIRED>
+<!ELEMENT modelo EMPTY>
+<!ATTLIST modelo 
+          nombre_mod ID #REQUIRED
+          fecha_lanzamiento CDATA #REQUIRED
+          promo_lanzamiento (si|no) "no">
+
+<!ELEMENT proveedores (proveedor+)>
+<!ELEMENT proveedor EMPTY>
+<!ATTLIST proveedor 
+          cif ID #REQUIRED
+          nombre CDATA #REQUIRED>
+
+<!ELEMENT tiendas (tienda+)>
+<!ELEMENT tienda (stock+, ventas*)>
+<!ATTLIST tienda 
+          id ID #REQUIRED
+          tipo (fisica|online) #REQUIRED
+          ubicacion CDATA #IMPLIED>
+
+<!ELEMENT stock EMPTY>
+<!ATTLIST stock 
+          modelo_ref IDREF #REQUIRED
+          proveedor_ref IDREF #REQUIRED
+          precio_actual CDATA #REQUIRED>
+
+<!ELEMENT ventas (venta+)>
+<!ELEMENT venta EMPTY>
+<!ATTLIST venta 
+          modelo_ref IDREF #REQUIRED
+          empleado CDATA #REQUIRED
+          precio_venta CDATA #REQUIRED
+          fecha CDATA #REQUIRED>

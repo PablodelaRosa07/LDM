@@ -1,0 +1,35 @@
+<!ELEMENT agencia (marcas, oficinas, empleados, clientes)>
+<!ELEMENT marcas (marca+)>
+<!ELEMENT marca (modelo+)>
+<!ATTLIST marca 
+          nombre CDATA #REQUIRED
+          origen CDATA #REQUIRED>
+<!ELEMENT modelo EMPTY>
+<!ATTLIST modelo 
+          id_mod ID #REQUIRED
+          nombre CDATA #REQUIRED
+          anyo CDATA #REQUIRED>
+
+<!ELEMENT oficinas (oficina+)>
+<!ELEMENT oficina (vehiculo+)>
+<!ATTLIST oficina id ID #REQUIRED ciudad CDATA #REQUIRED>
+<!ELEMENT vehiculo EMPTY>
+<!ATTLIST vehiculo 
+          matricula ID #REQUIRED
+          modelo_ref IDREF #REQUIRED>
+
+<!ELEMENT empleados (empleado+)>
+<!ELEMENT empleado (curso*)>
+<!ATTLIST empleado id ID #REQUIRED nombre CDATA #REQUIRED>
+<!ELEMENT curso EMPTY>
+<!ATTLIST curso nombre CDATA #REQUIRED fecha CDATA #REQUIRED>
+
+<!ELEMENT clientes (cliente+)>
+<!ELEMENT cliente (alquiler+)>
+<!ATTLIST cliente dni ID #REQUIRED nombre CDATA #REQUIRED>
+<!ELEMENT alquiler EMPTY>
+<!ATTLIST alquiler 
+          matricula_ref IDREF #REQUIRED
+          oficina_ref IDREF #REQUIRED
+          empleado_ref IDREF #REQUIRED
+          fecha_inicio CDATA #REQUIRED>

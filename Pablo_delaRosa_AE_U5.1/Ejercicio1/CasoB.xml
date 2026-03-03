@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE escuela SYSTEM "Escuela.dtd">
+<escuela>
+    <centros>
+        <centro nombre="Centro Dos Hermanas" sede="Montequinto">
+            <ciclo nombre="DAM">
+                <asignatura id="PROG" nombre="Programación" curso="1"/>
+                <asignatura id="PMDM" nombre="Prog. Multimedia" curso="2">
+                    <prerrequisito ref="PROG"/>
+                </asignatura>
+            </ciclo>
+        </centro>
+    </centros>
+
+    <alumnos>
+        <alumno dni="DNI87654321Z" nombre="María García" acceso="Grado_Medio">
+            <matricula asignatura="PROG" periodo_academico="2023-2024"/>
+            <matricula asignatura="PROG" periodo_academico="2024-2025"/>
+        </alumno>
+    </alumnos>
+
+    <docentes>
+        <docente dni="DNI11223344K" nombre="Carlos Ruiz">
+            <imparte asignatura="PROG" anyo="2024"/>
+        </docente>
+    </docentes>
+</escuela>

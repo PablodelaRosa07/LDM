@@ -1,0 +1,13 @@
+<!ELEMENT diario (nombre, telefono, notes)>
+<!ATTLIST diario 
+    fecha_actualizacion CDATA #REQUIRED
+    anyo_nacimiento CDATA #REQUIRED>
+
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT notes (note+)>
+<!ELEMENT note (to,from,heading,body)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
