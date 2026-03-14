@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE universidad SYSTEM "universidad.dtd">
+<universidad>
+  <asignatura id="ASIG01">
+    <nombre>Programación Web</nombre>
+  </asignatura>
+  <asignatura id="ASIG02">
+    <nombre>Bases de Datos</nombre>
+  </asignatura>
+
+  <alumno id="ALU55" matriculado_en="ASIG01 ASIG02">
+    <nombre>Carla Gómez</nombre>
+  </alumno>
+  <alumno id="ALU88" matriculado_en="ASIG01">
+    <nombre>Marcos Soler</nombre>
+  </alumno>
+</universidad>

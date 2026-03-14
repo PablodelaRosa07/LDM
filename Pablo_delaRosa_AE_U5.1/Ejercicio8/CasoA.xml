@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concesionarios SYSTEM "concesionarios.dtd">
+<concesionarios>
+  <info_legal>&copy_legal;</info_legal>
+
+  <repuestos>
+    <pieza id="P001">Motor V6</pieza>
+    <pieza id="P002">Frenos Cerámicos</pieza>
+    <pieza id="P003">Llantas Aleación</pieza>
+  </repuestos>
+
+  <concesionario nombre="Centro Ciudad" ciudad="Madrid">
+    <vehiculo id="V10" marca="Audi" combustible="gasolina">
+      <modelo>A4</modelo>
+      <equipamiento piezas_ref="P001 P002" />
+      <precio moneda="EUR">45000</precio>
+    </vehiculo>
+    
+    <vehiculo id="V20" marca="Tesla" combustible="electrico">
+      <modelo>Model 3</modelo>
+      <equipamiento piezas_ref="P003" />
+      <precio moneda="EUR">52000</precio>
+    </vehiculo>
+  </concesionario>
+</concesionarios>
