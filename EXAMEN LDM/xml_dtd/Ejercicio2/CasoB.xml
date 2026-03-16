@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE campus SYSTEM "Biblioteca.dtd">
+<campus>
+    <usuarios>
+        <usuario id_estudiante="ALU002" nombre="Luis García" nivel="Master" estado="Bloqueado"/>
+    </usuarios>
+    <materiales>
+        <material id_material="CAM09" titulo="Sony PS" tipo="Camara" dias_prestamo_max="3"/>
+    </materiales>
+    <personal>
+        <empleado id_empleado="EMP02" nombre="Sonia Tecnica" departamento="Servicio_Tecnico"/>
+    </personal>
+    <prestamos>
+        <prestamo id_p="P002" usuario_ref="ALU002" material_ref="CAM09" empleado_ref="EMP02" 
+                  sede_recogida="Porvenir" sede_devolucion="Cartuja" 
+                  fecha_salida="2026-02-15" fecha_limite="2026-02-18"/>
+    </prestamos>
+</campus>

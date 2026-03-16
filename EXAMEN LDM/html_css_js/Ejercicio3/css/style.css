@@ -1,0 +1,10 @@
+.todo-app { max-width: 300px; margin: 20px auto; }
+ul { list-style: none; padding: 0; }
+li { 
+    background: #eee; 
+    margin: 5px 0; 
+    padding: 10px; 
+    display: flex; 
+    justify-content: space-between; 
+}
+.delete-btn { color: red; cursor: pointer; font-weight: bold; }

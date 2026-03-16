@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gestion_tiendas SYSTEM "Tienda.dtd">
+<gestion_tiendas>
+    <marcas>
+        <marca nombre="Tecno2" fabricante="Tecno2 Corp" localizacion="Nueva York">
+            <modelo nombre_mod="S24" fecha_lanzamiento="2024-01-01" promo_lanzamiento="no"/>
+        </marca>
+    </marcas>
+    <proveedores>
+        <proveedor cif="B67890" nombre="Global Mobiles"/>
+    </proveedores>
+    <tiendas>
+        <tienda id="T_WEB" tipo="online">
+            <stock modelo_ref="S24" proveedor_ref="B67890" precio_actual="850"/>
+        </tienda>
+    </tiendas>
+</gestion_tiendas>

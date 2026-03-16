@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE campus SYSTEM "Biblioteca.dtd">
+<campus>
+    <usuarios>
+        <usuario id_estudiante="ALU001" nombre="Ana Silva" nivel="GS" estado="Activo"/>
+    </usuarios>
+    <materiales>
+        <material id_material="LIB45" titulo="XML para Principiantes" tipo="Libro" dias_prestamo_max="7"/>
+    </materiales>
+    <personal>
+        <empleado id_empleado="EMP01" nombre="Juan Bibliotecario" departamento="Biblioteca"/>
+    </personal>
+    <prestamos>
+        <prestamo id_p="P001" usuario_ref="ALU001" material_ref="LIB45" empleado_ref="EMP01" 
+                  sede_recogida="Cartuja" fecha_salida="2026-03-01" fecha_limite="2026-03-08"/>
+    </prestamos>
+</campus>

@@ -1,0 +1,21 @@
+<!ELEMENT academia (curso+)>
+<!ATTLIST academia nombre CDATA #REQUIRED>
+
+<!ELEMENT curso (titulo, descripcion, docente, horario*)>
+<!ATTLIST curso codigo ID #REQUIRED>
+
+<!ELEMENT titulo (#PCDATA)>
+
+<!ELEMENT descripcion (#PCDATA | negrita | subrayado)*>
+<!ELEMENT negrita (#PCDATA)>
+<!ELEMENT subrayado (#PCDATA)>
+
+<!ELEMENT docente (nombre, apellido)>
+<!ATTLIST docente dni CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+
+<!ELEMENT horario EMPTY>
+<!ATTLIST horario 
+          dia (Lunes | Martes | Miércoles | Jueves | Viernes) #REQUIRED
+          hora CDATA #REQUIRED>

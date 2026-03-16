@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE academia SYSTEM "academia.dtd">
+<academia nombre="Tech Institute">
+  
+  <curso codigo="WEB-202">
+    <titulo>Desarrollo de Interfaces Web</titulo>
+    <descripcion>
+      Este curso enseña <negrita>HTML5</negrita>, <negrita>CSS3</negrita> y el uso de <subrayado>XML con DTD</subrayado>.
+    </descripcion>
+    <docente dni="12345678X">
+      <nombre>Marta</nombre>
+      <apellido>Sánchez</apellido>
+    </docente>
+    <horario dia="Lunes" hora="16:00" />
+    <horario dia="Miércoles" hora="16:00" />
+  </curso>
+
+  <curso codigo="DAT-101">
+    <titulo>Bases de Datos Relacionales</titulo>
+    <descripcion>Fundamentos de SQL y diseño lógico.</descripcion>
+    <docente dni="87654321Z">
+      <nombre>Pablo</nombre>
+      <apellido>García</apellido>
+    </docente>
+    </curso>
+
+</academia>

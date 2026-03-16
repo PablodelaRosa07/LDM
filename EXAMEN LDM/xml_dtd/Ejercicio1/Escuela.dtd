@@ -1,0 +1,43 @@
+<!ELEMENT escuela (centros, alumnos, docentes)>
+<!ELEMENT centros (centro+)>
+<!ELEMENT centro (ciclo+)>
+<!ATTLIST centro 
+          nombre CDATA #REQUIRED
+          sede (Cartuja | Montequinto | Jerez) #REQUIRED>
+
+<!ELEMENT ciclo (asignatura+)>
+<!ATTLIST ciclo 
+          nombre (DAW | DAM) #REQUIRED>
+
+<!ELEMENT asignatura (prerrequisito*)>
+<!ATTLIST asignatura 
+          id ID #REQUIRED
+          nombre CDATA #REQUIRED
+          curso (1 | 2) #REQUIRED>
+
+<!ELEMENT prerrequisito EMPTY>
+<!ATTLIST prerrequisito 
+          ref IDREF #REQUIRED>
+
+<!ELEMENT alumnos (alumno+)>
+<!ELEMENT alumno (matricula+)>
+<!ATTLIST alumno 
+          dni ID #REQUIRED
+          nombre CDATA #REQUIRED
+          acceso (Bachillerato | Grado_Medio | Prueba_Acceso) #REQUIRED>
+
+<!ELEMENT matricula EMPTY>
+<!ATTLIST matricula 
+          asignatura IDREF #REQUIRED
+          periodo_academico CDATA #REQUIRED>
+
+<!ELEMENT docentes (docente+)>
+<!ELEMENT docente (imparte+)>
+<!ATTLIST docente 
+          dni ID #REQUIRED
+          nombre CDATA #REQUIRED>
+
+<!ELEMENT imparte EMPTY>
+<!ATTLIST imparte 
+          asignatura IDREF #REQUIRED
+          anyo CDATA #REQUIRED>

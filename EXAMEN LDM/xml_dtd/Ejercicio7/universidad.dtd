@@ -1,0 +1,12 @@
+<!ELEMENT universidad (asignatura+, alumno+)>
+
+<!ELEMENT asignatura (nombre)>
+<!ATTLIST asignatura 
+          id ID #REQUIRED>
+
+<!ELEMENT alumno (nombre)>
+<!ATTLIST alumno 
+          id ID #REQUIRED
+          matriculado_en IDREFS #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>

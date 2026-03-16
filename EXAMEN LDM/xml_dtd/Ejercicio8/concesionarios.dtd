@@ -1,0 +1,28 @@
+<!ENTITY copy_legal "Propiedad de Red Concesionarios S.A. 2026.">
+
+<!ELEMENT concesionarios (info_legal, repuestos, concesionario+)>
+
+<!ELEMENT info_legal (#PCDATA)>
+
+<!ELEMENT repuestos (pieza+)>
+<!ELEMENT pieza (#PCDATA)>
+<!ATTLIST pieza id ID #REQUIRED>
+
+<!ELEMENT concesionario (vehiculo*)>
+<!ATTLIST concesionario 
+          nombre CDATA #REQUIRED
+          ciudad CDATA #FIXED "Madrid">
+
+<!ELEMENT vehiculo (modelo, equipamiento, precio)>
+<!ATTLIST vehiculo 
+          id ID #REQUIRED
+          marca CDATA #REQUIRED
+          combustible (gasolina | diesel | electrico | hibrido) "gasolina">
+
+<!ELEMENT modelo (#PCDATA)>
+
+<!ELEMENT equipamiento EMPTY>
+<!ATTLIST equipamiento piezas_ref IDREFS #REQUIRED>
+
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio moneda CDATA #FIXED "EUR">

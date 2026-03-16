@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container" id="quiz">
+        <div id="home-screen">
+            <h1>¿Cuánto sabes de Tecnología?</h1>
+            <button id="start-btn">Empezar Juego</button>
+        </div>
+
+        <div id="question-screen" class="hide">
+            <div class="quiz-header">
+                <span id="question-number">Pregunta 1 de 5</span>
+                <div id="timer">Tiempo: 15s</div>
+            </div>
+            <h2 id="question-text">Aquí va la pregunta</h2>
+            <div id="answer-buttons" class="btn-grid">
+                </div>
+            <button id="next-btn" class="hide">Siguiente Pregunta</button>
+        </div>
+
+        <div id="result-screen" class="hide">
+            <h2>¡Cuestionario Finalizado!</h2>
+            <p id="score-text">Tu puntaje: 0/0</p>
+            <button onclick="location.reload()">Reintentar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empresa SYSTEM "Empresa.dtd">
+<empresa>
+    <sedes>
+        <sede nombre="Málaga Tech">
+            <departamento nombre="movil">
+                <programadores>
+                    <senior id="S01" nombre="Laura Jefa">
+                        <junior id="J01" nombre="Pedro Novato"/>
+                        <junior id="J02" nombre="Marta Aprendiz"/>
+                    </senior>
+                </programadores>
+            </departamento>
+        </sede>
+    </sedes>
+    <proyectos>
+        <proyecto id_pro="P_APP_01" nombre="App Bancaria">
+            <equipo>
+                <miembro ref_prog="S01"/>
+                <miembro ref_prog="J01"/>
+            </equipo>
+            <subproyecto nombre="Modulo Login"/>
+        </proyecto>
+    </proyectos>
+</empresa>

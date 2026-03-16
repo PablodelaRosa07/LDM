@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empresa SYSTEM "Empresa.dtd">
+<empresa>
+    <sedes>
+        <sede nombre="Sevilla Games">
+            <departamento nombre="videojuegos">
+                <programadores>
+                    <senior id="S_GAMES_01" nombre="Antonio Moreno">
+                        <junior id="J_GAMES_01" nombre="Lucía Ferrera"/>
+                        <junior id="J_GAMES_02" nombre="Fran Gómez"/>
+                    </senior>
+                </programadores>
+            </departamento>
+        </sede>
+    </sedes>
+    <proyectos>
+        <proyecto id_pro="PRO_SIM_VUELO" nombre="Simulador Vuelo">
+            <equipo>
+                <miembro ref_prog="S_GAMES_01"/>
+                <miembro ref_prog="J_GAMES_01"/>
+            </equipo>
+            <subproyecto nombre="IA de Navegación"/>
+        </proyecto>
+    </proyectos>
+</empresa>

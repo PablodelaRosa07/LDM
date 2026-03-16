@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agencia SYSTEM "Alquiler.dtd">
+<agencia>
+    <marcas>
+        <marca nombre="Tesla" origen="EEUU">
+            <modelo id_mod="MOD3" nombre="Model 3" anyo="2024"/>
+            <modelo id_mod="MODY" nombre="Model Y" anyo="2025"/>
+        </marca>
+    </marcas>
+    <oficinas>
+        <oficina id="OF_MAD_05" ciudad="Madrid">
+            <vehiculo matricula="MAT5566KKB" modelo_ref="MOD3"/>
+            <vehiculo matricula="MAT9988ZXY" modelo_ref="MODY"/>
+        </oficina>
+    </oficinas>
+    <empleados>
+        <empleado id="E_COMER_22" nombre="Beatriz Solís">
+            <curso nombre="Seguridad Vehículos Eléctricos" fecha="2025-11-20"/>
+            <curso nombre="Ventas Avanzadas" fecha="2026-01-15"/>
+        </empleado>
+    </empleados>
+    <clientes>
+        <cliente dni="DNI12344321P" nombre="Sonia Méndez">
+            <alquiler matricula_ref="MAT9988ZXY" oficina_ref="OF_MAD_05" empleado_ref="E_COMER_22" fecha_inicio="2026-03-01"/>
+        </cliente>
+    </clientes>
+</agencia>

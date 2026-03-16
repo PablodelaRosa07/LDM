@@ -1,0 +1,36 @@
+<!ELEMENT campus (usuarios, materiales, personal, prestamos)>
+
+<!ELEMENT usuarios (usuario+)>
+<!ELEMENT usuario EMPTY>
+<!ATTLIST usuario 
+          id_estudiante ID #REQUIRED
+          nombre CDATA #REQUIRED
+          nivel (GS | Universitario | Master) #REQUIRED
+          estado (Activo | Bloqueado) "Activo">
+
+<!ELEMENT materiales (material+)>
+<!ELEMENT material EMPTY>
+<!ATTLIST material 
+          id_material ID #REQUIRED
+          titulo CDATA #REQUIRED
+          tipo (Libro | Camara) #REQUIRED
+          dias_prestamo_max CDATA #REQUIRED>
+
+<!ELEMENT personal (empleado+)>
+<!ELEMENT empleado EMPTY>
+<!ATTLIST empleado 
+          id_empleado ID #REQUIRED
+          nombre CDATA #REQUIRED
+          departamento (Biblioteca | Servicio_Tecnico) #REQUIRED>
+
+<!ELEMENT prestamos (prestamo+)>
+<!ELEMENT prestamo EMPTY>
+<!ATTLIST prestamo 
+          id_p ID #REQUIRED
+          usuario_ref IDREF #REQUIRED
+          material_ref IDREF #REQUIRED
+          empleado_ref IDREF #REQUIRED
+          sede_recogida (Porvenir | Cartuja) #REQUIRED
+          sede_devolucion (Porvenir | Cartuja) #IMPLIED
+          fecha_salida CDATA #REQUIRED
+          fecha_limite CDATA #REQUIRED>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo SYSTEM "catalogo.dtd">
+<catalogo>
+  <videojuego id="v01" genero="rpg">
+    <titulo>The Witcher 3</titulo>
+    <desarrollador>CD Projekt Red</desarrollador>
+    <lanzamiento anio="2015" />
+    <plataforma>PC</plataforma>
+    <plataforma>PS4</plataforma>
+    <precio moneda="EUR">29.99</precio>
+  </videojuego>
+
+  <videojuego id="v02" genero="accion">
+    <titulo>Elden Ring</titulo>
+    <desarrollador>FromSoftware</desarrollador>
+    <lanzamiento anio="2022" />
+    <plataforma>Xbox Series X</plataforma>
+    <precio moneda="EUR">59.99</precio>
+  </videojuego>
+</catalogo>

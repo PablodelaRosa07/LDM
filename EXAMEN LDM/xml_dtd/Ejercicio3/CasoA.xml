@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gestion_tiendas SYSTEM "Tienda.dtd">
+<gestion_tiendas>
+    <marcas>
+        <marca nombre="Tecno" fabricante="Tecno Inc" localizacion="California">
+            <modelo nombre_mod="P15" fecha_lanzamiento="2023-09-12" promo_lanzamiento="si"/>
+        </marca>
+    </marcas>
+    <proveedores>
+        <proveedor cif="B12345" nombre="TecnoDistribución S.L."/>
+    </proveedores>
+    <tiendas>
+        <tienda id="T_CENTRO" tipo="fisica" ubicacion="Calle Sierpes, Sevilla">
+            <stock modelo_ref="P15" proveedor_ref="B12345" precio_actual="999"/>
+        </tienda>
+    </tiendas>
+</gestion_tiendas>
