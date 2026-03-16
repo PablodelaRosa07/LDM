@@ -1,4 +1,4 @@
-const questions = [
+const questions = [ // NO USAR CONST, USAR VAR
     {
         question: "¿Qué significa HTML?",
         answers: [
