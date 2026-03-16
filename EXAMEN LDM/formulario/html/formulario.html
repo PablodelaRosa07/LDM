@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscripción Torneo</title>
+    <link rel="stylesheet" href="../css/formulariostyle.css">
+</head>
+<body>
+
+    <a href="../index.html" class="enlacebonito">Volver al menú</a>
+
+    <h1>Inscripción al formulario para participar</h1>
+    
+    <form action="#" class="formulario-loco">
+
+        <fieldset class="grupo-jugador">
+            <legend>Datos del jugador</legend>
+
+            <label for="usuario">Nombre de usuario:</label>
+            <input required type="text" id="usuario" name="usuario" placeholder="Ej: Patata">
+            <span class="mensajito-error"></span>
+
+            <label for="correo">Email:</label>
+            <input required type="email" id="correo" name="correo" placeholder="correo@gmail.com">
+            <span class="mensajito-error"></span>
+
+            <label for="password">Contraseña:</label>
+            <input required type="password" id="password" name="contraseña" placeholder="Usa una contraseña segura">
+            <span class="mensajito-error"></span>
+
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input required type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+            <span class="mensajito-error"></span>
+
+            <label for="telefono">Teléfono de contacto:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ej: 600123123">
+            <span class="mensajito-error"></span>
+
+            <label for="nickname">Nickname en el juego:</label>
+            <input type="text" id="nickname" name="nickname" placeholder="Ej: ProGamer_99">
+            <span class="mensajito-error"></span>
+        </fieldset>
+
+        <fieldset class="grupo-plataforma">
+            <legend>Plataforma Principal</legend>
+
+            <label>
+                <input type="radio" name="plataforma" value="PC" required>
+                PC
+            </label>
+
+            <label>
+                <input type="radio" name="plataforma" value="PlayStation">
+                PlayStation
+            </label>
+
+            <label>
+                <input type="radio" name="plataforma" value="Xbox">
+                Xbox
+            </label>
+        </fieldset>
+
+        <fieldset class="grupo-juegos">
+            <legend>Juegos de Interés</legend>
+
+            <label>
+                <input type="checkbox" name="juegos" value="Valorant">
+                Valorant
+            </label>
+
+            <label>
+                <input type="checkbox" name="juegos" value="CSGO">
+                CS:GO
+            </label>
+
+            <label>
+                <input type="checkbox" name="juegos" value="Age of Empires 2">
+                Age of Empires 2
+            </label>
+
+            <label>
+                <input type="checkbox" name="juegos" value="Dota 2">
+                Dota 2
+            </label>
+
+            <label for="comentarios">Otras preferencias:</label>
+            <textarea name="comentarios" id="comentarios" rows="3"></textarea>
+            <span class="mensajito-error"></span>
+        </fieldset>
+
+        <fieldset class="grupo-rango">
+            <legend>Nivel de Habilidad y rango</legend>
+
+            <label for="rango">Selecciona tu rango:</label>
+            <select name="rango" id="rango" required>
+                <option value="">--Elige tu nivel--</option>
+                <option value="Bronce">Bronce</option>
+                <option value="Plata">Plata</option>
+                <option value="Oro">Oro</option>
+                <option value="Platino">Platino</option>
+            </select>
+            <span class="mensajito-error"></span>
+        </fieldset>
+
+        <fieldset class="grupo-comentarios">
+            <legend>Comentarios adicionales</legend>
+            <label>
+                <input type="text" name="comentario" id="comentario" placeholder="Algo divertido...">
+            </label>
+            <span class="mensajito-error"></span>
+        </fieldset>
+
+        <button type="submit" class="boton-enviar-loco">Enviar inscripción</button>
+
+    </form>
+
+    <div id="mensaje-exito" class="mensaje-exito"></div>
+    <script src="../js/validacion.js"></script>
+
+</body>
+</html>
+

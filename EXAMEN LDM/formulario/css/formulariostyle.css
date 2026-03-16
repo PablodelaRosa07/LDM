@@ -1,0 +1,158 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image:url(../images/fondito.jpg);
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+    background-size: cover;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #fdfcfc;
+}
+
+.formulario {
+    background: #ececec;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(247, 4, 255, 0.15);
+    text-align: left;
+}
+
+fieldset {
+    border: 1px solid #f3f1f1;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #01a8f5;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+fieldset label input[type="radio"],
+fieldset label input[type="checkbox"] {
+    margin-right: 8px;
+    margin-top: 10px;
+}
+
+fieldset label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+}
+
+.enlacebonito {
+    text-decoration: none;    
+    color: #fff;                
+    background-color: #007BFF;  
+    padding: 10px 20px;        
+    border-radius: 8px;         
+    transition: background-color 0.3s; 
+}
+
+.enlacebonito:hover {
+    background-color: #0056b3;  
+}
+
+.mensajito-error {
+    color: red;
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 2px;
+}
+
+input.invalid, select.invalid, textarea.invalid {
+    border-color: red;
+    background-color: #f09292;
+}
+
+.grupo-jugador, 
+.grupo-plataforma, 
+.grupo-juegos, 
+.grupo-rango, 
+.grupo-comentarios {
+    border: 2px solid #2980b9;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.boton-enviar-loco {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.boton-enviar-loco:hover {
+    background-color: #0056b3;
+    transform: scale(1.03);
+}
+
+.mensaje-exito {
+    display: none; /* inicialmente oculto */
+    background-color: #27ae60;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(247, 8, 255, 0.2);
+}
+
+
+.formulario-loco {
+    background: #292828;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.795);
+    text-align: left;
+}
+
+
+input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+

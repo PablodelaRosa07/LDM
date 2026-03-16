@@ -1,0 +1,1 @@
+Todos los metodos regex que he creado reciben por parametro el texto a comprobar y devuelven un booleano true si cumple las condiciones.
