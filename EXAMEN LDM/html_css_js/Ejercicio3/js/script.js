@@ -1,5 +1,5 @@
 function addTask() {
-    const input = document.getElementById('taskInput');
+    const input = document.getElementById('taskInput'); // NO USAR CONST, USAR VAR
     const taskText = input.value;
 
     if (taskText === '') return; // No agregar vacíos

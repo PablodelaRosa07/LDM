@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Gestion SYSTEM "Ejercicio2.dtd">
+<Gestion>
+    <Empleados>
+        <Empleado id="E1">
+            <DNI>27663377L</DNI>
+            <NSS>420000023040</NSS>
+            <Nombre>Juan</Nombre>
+            <Apellidos>Ramirez López</Apellidos>
+            <Cargo>Técnico</Cargo>
+            <CodProyecto>P1</CodProyecto>
+        </Empleado>
+        <Empleado id="E2">
+            <DNI>32998877K</DNI>
+            <NSS>420000023232</NSS>
+            <Nombre>Ana</Nombre>
+            <Apellidos>García León</Apellidos>
+            <Cargo>Líder</Cargo>
+            <CodProyecto>P1</CodProyecto>
+        </Empleado>
+        <Empleado id="E3">
+            <DNI>98889993H</DNI>
+            <NSS>420000013252</NSS>
+            <Nombre>Javier</Nombre>
+            <Apellidos>Sanz Amigo</Apellidos>
+            <Cargo>Líder</Cargo>
+            <CodProyecto>P2</CodProyecto>
+        </Empleado>
+        <Empleado id="E4">
+            <DNI>11002233J</DNI>
+            <NSS>420000042368</NSS>
+            <Nombre>Fatima</Nombre>
+            <Apellidos>Pérez García</Apellidos>
+            <Cargo>Técnico</Cargo>
+            <CodProyecto>P2</CodProyecto>
+        </Empleado>
+    </Empleados>
+
+    <Cargos>
+        <EmpleadoCargo nombre="Técnico" categoria="Administracion">
+            <Sueldo>1700</Sueldo>
+        </EmpleadoCargo>
+        <EmpleadoCargo nombre="Líder" categoria="Direccion">
+            <Sueldo>2600</Sueldo>
+        </EmpleadoCargo>
+    </Cargos>
+
+    <Proyectos>
+        <Proyecto id_pro="P1" estado="Activo">
+            <Tipo>Desarrollo</Tipo>
+            <Sede>Sevilla</Sede>
+            <FechaInicio>14/03/2026</FechaInicio>
+            <Responsable>Manuela López</Responsable>
+        </Proyecto>
+        <Proyecto id_pro="P2" estado="Activo">
+            <Tipo>Mantenimiento</Tipo>
+            <Sede>Madrid</Sede>
+            <FechaInicio>08/05/2026</FechaInicio>
+            <Responsable>José Rodriguez</Responsable>
+        </Proyecto>
+    </Proyectos>
+</Gestion>

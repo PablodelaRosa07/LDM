@@ -1,9 +1,9 @@
 const balance = document.getElementById('balance');
-const money_plus = document.getElementById('money-plus');
+const money_plus = document.getElementById('money-plus'); // NO USAR CONST, USAR VAR
 const money_minus = document.getElementById('money-minus');
 const list = document.getElementById('list');
 const form = document.getElementById('form');
-const text = document.getElementById('text');
+const text = document.getElementById('text'); // NO USAR CONST, USAR VAR
 const amount = document.getElementById('amount');
 
 // Intentar cargar datos desde LocalStorage o empezar con array vacío
@@ -47,7 +47,7 @@ function addTransactionDOM(transaction) {
 
 // 3. Actualizar balance, ingresos y gastos
 function updateValues() {
-    const amounts = transactions.map(t => t.amount);
+    const amounts = transactions.map(t => t.amount); // NO USAR CONST, USAR VAR
 
     const total = amounts.reduce((acc, item) => (acc += item), 0).toFixed(2);
 

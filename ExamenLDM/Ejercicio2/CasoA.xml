@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Gestion SYSTEM "Ejercicio2.dtd">
+<Gestion>
+    <Empleados>
+        <Empleado id="E1">
+            <DNI>27663377L</DNI>
+            <NSS>420000023040</NSS>
+            <Nombre>Juan</Nombre>
+            <Apellidos>Ramirez López</Apellidos>
+            <Cargo>Técnico</Cargo>
+            <CodProyecto>P1</CodProyecto>
+        </Empleado>
+    </Empleados>
+
+    <Cargos>
+        <EmpleadoCargo nombre="Técnico" categoria="Direccion">
+            <Sueldo>1700</Sueldo>
+        </EmpleadoCargo>
+    </Cargos>
+
+    <Proyectos>
+        <Proyecto id_pro="P1" estado="Activo">
+            <Tipo>Desarrollo</Tipo>
+            <Sede>Sevilla</Sede>
+            <FechaInicio>14/03/2026</FechaInicio>
+            <Responsable>Manuela López</Responsable>
+        </Proyecto>
+    </Proyectos>
+</Gestion>
