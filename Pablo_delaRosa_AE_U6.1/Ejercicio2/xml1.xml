@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gestion_prestamos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd.xsd">
+  <prestamo>
+    <codigoAlumno>ALU-8822</codigoAlumno>
+    <tipoEstudios>Máster</tipoEstudios>
+    <tipoMaterial>Libro</tipoMaterial>
+    <nombreMaterial>Guía de XML Avanzado</nombreMaterial>
+    <sedeRetirada>Porvenir</sedeRetirada>
+    <diasPrestamo>7 días</diasPrestamo>
+    <estado>Activo</estado>
+  </prestamo>
+</gestion_prestamos>

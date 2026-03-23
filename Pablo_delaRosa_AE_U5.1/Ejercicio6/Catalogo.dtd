@@ -1,0 +1,17 @@
+<!ELEMENT catalogo (videojuego+)>
+<!ELEMENT videojuego (titulo, desarrollador, lanzamiento, plataforma+, precio)>
+
+<!ATTLIST videojuego 
+          id ID #REQUIRED
+          genero (rpg | accion | deportes | aventura) "aventura">
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT desarrollador (#PCDATA)>
+
+<!ELEMENT lanzamiento EMPTY>
+<!ATTLIST lanzamiento anio CDATA #REQUIRED>
+
+<!ELEMENT plataforma (#PCDATA)>
+
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio moneda CDATA #FIXED "EUR">

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gestion_comercial xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd.xsd">
+  <tienda>
+    <nombreTienda>Mobile Nervión</nombreTienda>
+    <ubicacion>Física - Sevilla</ubicacion>
+    <empleado>Juan Pérez</empleado>
+    <empleado>María García</empleado>
+    <catalogo>
+      <movil>
+        <marca>Xiaomi</marca>
+        <modelo>Redmi Note 12 Pro</modelo>
+        <fabricante>Xiaomi Corp</fabricante>
+        <precio>250 euros</precio>
+        <fechaLanzamiento>Enero 2023</fechaLanzamiento>
+      </movil>
+    </catalogo>
+  </tienda>
+</gestion_comercial>

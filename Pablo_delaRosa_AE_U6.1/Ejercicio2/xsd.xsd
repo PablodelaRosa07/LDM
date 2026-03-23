@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="gestion_prestamos">
+    <xs:complexType>
+      <xs:sequence>
+        
+        <xs:element name="prestamo" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="codigoAlumno" type="xs:string"/>
+              <xs:element name="tipoEstudios" type="xs:string"/> <xs:element name="tipoMaterial" type="xs:string"/> <xs:element name="nombreMaterial" type="xs:string"/>
+              
+              <xs:element name="sedeRetirada" type="xs:string"/> <xs:element name="diasPrestamo" type="xs:string"/> 
+              <xs:element name="estado" type="xs:string"/> </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

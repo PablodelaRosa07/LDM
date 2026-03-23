@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organizacion_software xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd.xsd">
+  <departamento>
+    <nombreDepartamento>Videojuegos</nombreDepartamento>
+    <sede>Cartuja Tecnológica</sede>
+    <programadores>
+      <programador>
+        <nombre>Elena Rodríguez</nombre>
+        <nivel>Senior</nivel>
+      </programador>
+    </programadores>
+    <proyectos>
+      <proyecto>
+        <nombreProyecto>Simulador de Vuelo 2024</nombreProyecto>
+        <subproyecto>Motor de Física</subproyecto>
+      </proyecto>
+    </proyectos>
+  </departamento>
+</organizacion_software>

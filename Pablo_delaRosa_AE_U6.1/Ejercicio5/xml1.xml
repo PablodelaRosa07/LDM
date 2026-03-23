@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agencia_alquiler xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd.xsd">
+  <alquiler>
+    <oficina>Sede Aeropuerto Sevilla</oficina>
+    <empleado>Carlos Ruiz</empleado>
+    <cliente>Ana López</cliente>
+    <dniCliente>12345678A</dniCliente>
+    <vehiculo>
+      <marca>Toyota (Origen: Japón)</marca>
+      <modelo>Yaris (Fab: 2022)</modelo>
+      <matricula>1122-ABC</matricula>
+    </vehiculo>
+    <fechaAlquiler>15/05/2024</fechaAlquiler>
+  </alquiler>
+</agencia_alquiler>

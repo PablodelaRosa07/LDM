@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agencia_alquiler xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd.xsd">
+  <alquiler>
+    <oficina>Sucursal Santa Justa</oficina>
+    <empleado>Laura Beltrán</empleado>
+    <cliente>Mudanzas Paco</cliente>
+    <dniCliente>B99887766</dniCliente>
+    <vehiculo>
+      <marca>Mercedes-Benz (Origen: Alemania)</marca>
+      <modelo>Sprinter (Fab: 2023)</modelo>
+      <matricula>9988-XYZ</matricula>
+    </vehiculo>
+    <fechaAlquiler>20/05/2024</fechaAlquiler>
+  </alquiler>
+</agencia_alquiler>

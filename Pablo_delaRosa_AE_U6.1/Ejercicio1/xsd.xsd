@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="tiendas">
+    <xs:complexType>
+      <xs:sequence>
+        
+        <xs:element name="tienda" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="tipo" type="xs:string"/> <xs:element name="moviles">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="movil" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="marca" type="xs:string"/>
+                          <xs:element name="modelo" type="xs:string"/>
+                          <xs:element name="precio" type="xs:string"/> <xs:element name="fabricante" type="xs:string"/>
+                          <xs:element name="fechaLanzamiento" type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

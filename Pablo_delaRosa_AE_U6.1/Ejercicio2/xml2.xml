@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gestion_prestamos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd.xsd">
+  <prestamo>
+    <codigoAlumno>ALU-4455</codigoAlumno>
+    <tipoEstudios>Grado Superior</tipoEstudios>
+    <tipoMaterial>Cámara</tipoMaterial>
+    <nombreMaterial>Canon 3D</nombreMaterial>
+    <sedeRetirada>Cartuja</sedeRetirada>
+    <diasPrestamo>3 días</diasPrestamo>
+    <estado>Devuelto</estado>
+  </prestamo>
+</gestion_prestamos>

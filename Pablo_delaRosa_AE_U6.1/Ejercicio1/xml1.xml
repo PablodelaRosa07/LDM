@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<escuela xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="xsd.xsd">
+  <sedes>
+    <sede>
+      <nombre>Cartuja</nombre>
+      <ubicacion>Sevilla</ubicacion>
+    </sede>
+  </sedes>
+  <ciclos>
+    <ciclo>
+      <codigo>DAW</codigo>
+      <nombre>Desarrollo de Aplicaciones Web</nombre>
+      <asignaturas>
+        <asignatura>
+          <id>BD</id>
+          <nombre>Base de Datos</nombre>
+          <curso>1</curso>
+        </asignatura>
+        <asignatura>
+          <id>DWES_02</id>
+          <nombre>Desarrollo Web Entorno Servidor</nombre>
+          <curso>2</curso>
+          <pre-requisito>BD</pre-requisito>
+        </asignatura>
+      </asignaturas>
+    </ciclo>
+  </ciclos>
+</escuela>

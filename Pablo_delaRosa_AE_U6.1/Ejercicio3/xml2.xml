@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gestion_comercial xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd.xsd">
+  <tienda>
+    <nombreTienda>Web Oficial Móviles</nombreTienda>
+    <ubicacion>Online</ubicacion>
+    <empleado>Soporte Técnico Web</empleado>
+    <catalogo>
+      <movil>
+        <marca>Apple</marca>
+        <modelo>iPhone 15 Pro</modelo>
+        <fabricante>Apple Inc.</fabricante>
+        <precio>1200 euros</precio>
+        <fechaLanzamiento>Septiembre 2023</fechaLanzamiento>
+      </movil>
+    </catalogo>
+  </tienda>
+</gestion_comercial>

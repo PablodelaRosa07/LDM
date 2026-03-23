@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organizacion_software xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd.xsd">
+  <departamento>
+    <nombreDepartamento>Desarrollo Móvil</nombreDepartamento>
+    <sede>Sevilla Centro</sede>
+    <programadores>
+      <programador>
+        <nombre>Alberto García</nombre>
+        <nivel>Senior</nivel>
+      </programador>
+      <programador>
+        <nombre>Lucía Martín</nombre>
+        <nivel>Junior</nivel>
+        <mentor>Alberto García</mentor>
+      </programador>
+    </programadores>
+    <proyectos>
+      <proyecto>
+        <nombreProyecto>App Telemedicina</nombreProyecto>
+        <subproyecto>Módulo de Citas</subproyecto>
+        <subproyecto>Módulo de Videollamada</subproyecto>
+      </proyecto>
+    </proyectos>
+  </departamento>
+</organizacion_software>
