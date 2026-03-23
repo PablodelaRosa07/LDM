@@ -1,0 +1,29 @@
+<!ELEMENT Gestion (Empleados, Cargos, Proyectos)>
+
+<!ELEMENT Empleados (Empleado+)>
+<!ELEMENT Empleado (DNI, NSS, Nombre, Apellidos, Cargo, CodProyecto)>
+<!ATTLIST Empleado id ID #REQUIRED>
+
+<!ELEMENT DNI (#PCDATA)>
+<!ELEMENT NSS (#PCDATA)>
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Apellidos (#PCDATA)>
+<!ELEMENT Cargo (#PCDATA)>
+<!ELEMENT CodProyecto (#PCDATA)>
+
+<!ELEMENT Cargos (EmpleadoCargo+)>
+<!ELEMENT EmpleadoCargo (Sueldo)>
+<!ATTLIST EmpleadoCargo nombre CDATA #REQUIRED
+            categoria (Administracion | Direccion) "Direccion">
+
+<!ELEMENT Sueldo (#PCDATA)>
+
+<!ELEMENT Proyectos (Proyecto+)>
+<!ELEMENT Proyecto (Tipo, Sede, FechaInicio, Responsable)>
+<!ATTLIST Proyecto id_pro ID #REQUIRED
+            estado (Activo | Pausado | Finalizado) "Activo">
+
+<!ELEMENT Tipo (#PCDATA)>
+<!ELEMENT Sede (#PCDATA)>
+<!ELEMENT FechaInicio (#PCDATA)>
+<!ELEMENT Responsable (#PCDATA)>
